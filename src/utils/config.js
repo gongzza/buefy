@@ -5,7 +5,8 @@ const config = {
     defaultToastDuration: 2000,
     defaultTooltipType: 'is-primary',
     defaultTooltipAnimated: false,
-    defaultInputAutocomplete: 'on'
+    defaultInputAutocomplete: 'on',
+    store: null
 }
 
 export default config

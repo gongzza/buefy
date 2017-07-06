@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Modal from './Modal'
-
+import config from '../../utils/config'
 
 export { Modal }
 export default {
@@ -17,7 +17,8 @@ export default {
         const ModalComponent = Vue.extend(Modal)
         return new ModalComponent({
             el: document.createElement('div'),
-            propsData
+            propsData,
+            store: config.store
         })
     }
 }
